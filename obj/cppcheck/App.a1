@@ -1,0 +1,325 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="239130024056150282">
+        <error id="functionStatic" severity="performance" msg="Technically the member function &apos;App::render&apos; can be static (but you may consider moving to unnamed namespace)." verbose="The member function &apos;App::render&apos; can be made a static function. Making a function static can bring a performance benefit since no &apos;this&apos; instance is passed to the function. This change should not cause compiler errors but it does not necessarily make sense conceptually. Think about your design and the task of the function first - is it a function that must not access members of class instances? And maybe it is more appropriate to move this function to an unnamed namespace." cwe="398" inconclusive="true" file0="src/App/App.cpp">
+            <location file="src/App/App.cpp" line="123" column="11"/>
+            <location file="src/App/App.h" line="28" column="10"/>
+            <symbol>App::render</symbol>
+        </error>
+  <FileInfo check="Class">
+<class name="App" file="src/App/App.h" configuration="" line="11" col="1" hash="3378625242681155255"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="src/App/App.cpp:15:6" my-argnr="1" my-argname="config" file="src/App/App.cpp" line="21" col="10" value="0"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl file="include/EventDispatcher.h" functionName="addListener" lineNumber="26" column="21"/>
+    <functiondecl file="include/EventDispatcher.h" functionName="notify" lineNumber="46" column="21"/>
+    <functiondecl file="include/EventDispatcher.h" functionName="reset" lineNumber="57" column="21"/>
+    <functiondecl file="include/EventDispatcher.h" functionName="ensureList" lineNumber="64" column="21"/>
+    <functiondecl file="src/App/App.cpp" functionName="setupRaylib" lineNumber="15" column="6"/>
+    <functiondecl file="src/App/App.cpp" functionName="init" lineNumber="46" column="11"/>
+    <functiondecl file="src/App/App.cpp" functionName="updateFullscreenState" lineNumber="55" column="6"/>
+    <functiondecl file="src/App/App.cpp" functionName="updateApp" lineNumber="79" column="6"/>
+    <functiondecl file="src/App/App.cpp" functionName="run" lineNumber="101" column="11"/>
+    <functiondecl file="src/App/App.cpp" functionName="render" lineNumber="123" column="11"/>
+    <functiondecl file="src/App/App.cpp" functionName="deinit" lineNumber="133" column="11"/>
+    <functiondecl file="src/App/App.cpp" functionName="setupAppEvents" lineNumber="141" column="11"/>
+    <functioncall functionName="BG"/>
+    <functioncall functionName="BeginDrawing"/>
+    <functioncall functionName="ClearBackground"/>
+    <functioncall functionName="CloseWindow"/>
+    <functioncall functionName="DrawFPS"/>
+    <functioncall functionName="EXIT_KEY"/>
+    <functioncall functionName="EndDrawing"/>
+    <functioncall functionName="EventId"/>
+    <functioncall functionName="FAVICON"/>
+    <functioncall functionName="FLAG_VSYNC_HINT"/>
+    <functioncall functionName="FLAG_WINDOW_RESIZABLE"/>
+    <functioncall functionName="FPS_TARGET"/>
+    <functioncall functionName="GetFrameTime"/>
+    <functioncall functionName="GetMousePosition"/>
+    <functioncall functionName="GetScreenHeight"/>
+    <functioncall functionName="GetScreenWidth"/>
+    <functioncall functionName="InitWindow"/>
+    <functioncall functionName="IsKeyPressed"/>
+    <functioncall functionName="IsMouseButtonDown"/>
+    <functioncall functionName="IsWindowMaximized"/>
+    <functioncall functionName="IsWindowResized"/>
+    <functioncall functionName="KEY_F11"/>
+    <functioncall functionName="MOUSE_LEFT_BUTTON"/>
+    <functioncall functionName="MaximizeWindow"/>
+    <functioncall functionName="RestoreWindow"/>
+    <functioncall functionName="SetConfigFlags"/>
+    <functioncall functionName="SetExitKey"/>
+    <functioncall functionName="SetTargetFPS"/>
+    <functioncall functionName="SetWindowIcon"/>
+    <functioncall functionName="WINDOW_RESIZED"/>
+    <functioncall functionName="WindowShouldClose"/>
+    <functioncall functionName="addListener"/>
+    <functioncall functionName="deinit"/>
+    <functioncall functionName="end"/>
+    <functioncall functionName="ensureList"/>
+    <functioncall functionName="false"/>
+    <functioncall functionName="find"/>
+    <functioncall functionName="forward_list"/>
+    <functioncall functionName="function"/>
+    <functioncall functionName="init"/>
+    <functioncall functionName="notify"/>
+    <functioncall functionName="push_front"/>
+    <functioncall functionName="render"/>
+    <functioncall functionName="setupAppEvents"/>
+    <functioncall functionName="setupRaylib"/>
+    <functioncall functionName="try_emplace"/>
+    <functioncall functionName="unordered_map"/>
+    <functioncall functionName="updateApp"/>
+    <functioncall functionName="updateFullscreenState"/>
+  </FileInfo>
+  <FileInfo check="Class">
+<class name="App" file="src/App/App.h" configuration="DEBUG;DEBUG_EVENT_DISPATCHER" line="11" col="1" hash="3378625242681155255"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="src/App/App.cpp:15:6" my-argnr="1" my-argname="config" file="src/App/App.cpp" line="21" col="10" value="0"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl file="include/EventDispatcher.h" functionName="addListener" lineNumber="26" column="21"/>
+    <functiondecl file="include/EventDispatcher.h" functionName="notify" lineNumber="46" column="21"/>
+    <functiondecl file="include/EventDispatcher.h" functionName="reset" lineNumber="57" column="21"/>
+    <functiondecl file="include/EventDispatcher.h" functionName="ensureList" lineNumber="64" column="21"/>
+    <functiondecl file="src/App/App.cpp" functionName="setupRaylib" lineNumber="15" column="6"/>
+    <functiondecl file="src/App/App.cpp" functionName="init" lineNumber="46" column="11"/>
+    <functiondecl file="src/App/App.cpp" functionName="updateFullscreenState" lineNumber="55" column="6"/>
+    <functiondecl file="src/App/App.cpp" functionName="updateApp" lineNumber="79" column="6"/>
+    <functiondecl file="src/App/App.cpp" functionName="run" lineNumber="101" column="11"/>
+    <functiondecl file="src/App/App.cpp" functionName="render" lineNumber="123" column="11"/>
+    <functiondecl file="src/App/App.cpp" functionName="deinit" lineNumber="133" column="11"/>
+    <functiondecl file="src/App/App.cpp" functionName="setupAppEvents" lineNumber="141" column="11"/>
+    <functioncall functionName="BG"/>
+    <functioncall functionName="BeginDrawing"/>
+    <functioncall functionName="ClearBackground"/>
+    <functioncall functionName="CloseWindow"/>
+    <functioncall functionName="DrawFPS"/>
+    <functioncall functionName="EXIT_KEY"/>
+    <functioncall functionName="EndDrawing"/>
+    <functioncall functionName="EventId"/>
+    <functioncall functionName="FAVICON"/>
+    <functioncall functionName="FLAG_VSYNC_HINT"/>
+    <functioncall functionName="FLAG_WINDOW_RESIZABLE"/>
+    <functioncall functionName="FPS_TARGET"/>
+    <functioncall functionName="GetFrameTime"/>
+    <functioncall functionName="GetMousePosition"/>
+    <functioncall functionName="GetScreenHeight"/>
+    <functioncall functionName="GetScreenWidth"/>
+    <functioncall functionName="InitWindow"/>
+    <functioncall functionName="IsKeyPressed"/>
+    <functioncall functionName="IsMouseButtonDown"/>
+    <functioncall functionName="IsWindowMaximized"/>
+    <functioncall functionName="IsWindowResized"/>
+    <functioncall functionName="KEY_F11"/>
+    <functioncall functionName="MOUSE_LEFT_BUTTON"/>
+    <functioncall functionName="MaximizeWindow"/>
+    <functioncall functionName="RestoreWindow"/>
+    <functioncall functionName="SetConfigFlags"/>
+    <functioncall functionName="SetExitKey"/>
+    <functioncall functionName="SetTargetFPS"/>
+    <functioncall functionName="SetWindowIcon"/>
+    <functioncall functionName="WINDOW_RESIZED"/>
+    <functioncall functionName="WindowShouldClose"/>
+    <functioncall functionName="addListener"/>
+    <functioncall functionName="at"/>
+    <functioncall functionName="cliLog"/>
+    <functioncall functionName="deinit"/>
+    <functioncall functionName="end"/>
+    <functioncall functionName="ensureList"/>
+    <functioncall functionName="false"/>
+    <functioncall functionName="find"/>
+    <functioncall functionName="forward_list"/>
+    <functioncall functionName="function"/>
+    <functioncall functionName="init"/>
+    <functioncall functionName="notify"/>
+    <functioncall functionName="push_front"/>
+    <functioncall functionName="render"/>
+    <functioncall functionName="setupAppEvents"/>
+    <functioncall functionName="setupRaylib"/>
+    <functioncall functionName="try_emplace"/>
+    <functioncall functionName="unordered_map"/>
+    <functioncall functionName="updateApp"/>
+    <functioncall functionName="updateFullscreenState"/>
+  </FileInfo>
+  <FileInfo check="Class">
+<class name="App" file="src/App/App.h" configuration="EMSCRIPTEN" line="11" col="1" hash="8668025072433921358"/>
+  </FileInfo>
+  <FileInfo check="Uninitialized variables">
+    <unsafe-usage my-id="src/App/App.cpp:15:6" my-argnr="1" my-argname="config" file="src/App/App.cpp" line="21" col="10" value="0"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl file="include/EventDispatcher.h" functionName="addListener" lineNumber="26" column="21"/>
+    <functiondecl file="include/EventDispatcher.h" functionName="notify" lineNumber="46" column="21"/>
+    <functiondecl file="include/EventDispatcher.h" functionName="reset" lineNumber="57" column="21"/>
+    <functiondecl file="include/EventDispatcher.h" functionName="ensureList" lineNumber="64" column="21"/>
+    <functiondecl file="src/App/App.cpp" functionName="setupRaylib" lineNumber="15" column="6"/>
+    <functiondecl file="src/App/App.cpp" functionName="init" lineNumber="46" column="11"/>
+    <functiondecl file="src/App/App.cpp" functionName="updateFullscreenState" lineNumber="55" column="6"/>
+    <functiondecl file="src/App/App.cpp" functionName="updateApp" lineNumber="79" column="6"/>
+    <functiondecl file="src/App/App.cpp" functionName="run" lineNumber="101" column="11"/>
+    <functiondecl file="src/App/App.cpp" functionName="render" lineNumber="123" column="11"/>
+    <functiondecl file="src/App/App.cpp" functionName="deinit" lineNumber="133" column="11"/>
+    <functiondecl file="src/App/App.cpp" functionName="setupAppEvents" lineNumber="141" column="11"/>
+    <functioncall functionName="BG"/>
+    <functioncall functionName="BeginDrawing"/>
+    <functioncall functionName="ClearBackground"/>
+    <functioncall functionName="CloseWindow"/>
+    <functioncall functionName="DrawFPS"/>
+    <functioncall functionName="EXIT_KEY"/>
+    <functioncall functionName="EndDrawing"/>
+    <functioncall functionName="EventId"/>
+    <functioncall functionName="FAVICON"/>
+    <functioncall functionName="FLAG_VSYNC_HINT"/>
+    <functioncall functionName="FLAG_WINDOW_RESIZABLE"/>
+    <functioncall functionName="FPS_TARGET"/>
+    <functioncall functionName="GetFrameTime"/>
+    <functioncall functionName="GetMousePosition"/>
+    <functioncall functionName="GetScreenHeight"/>
+    <functioncall functionName="GetScreenWidth"/>
+    <functioncall functionName="InitWindow"/>
+    <functioncall functionName="IsKeyPressed"/>
+    <functioncall functionName="IsMouseButtonDown"/>
+    <functioncall functionName="IsWindowMaximized"/>
+    <functioncall functionName="IsWindowResized"/>
+    <functioncall functionName="KEY_F11"/>
+    <functioncall functionName="MOUSE_LEFT_BUTTON"/>
+    <functioncall functionName="MaximizeWindow"/>
+    <functioncall functionName="RestoreWindow"/>
+    <functioncall functionName="SetConfigFlags"/>
+    <functioncall functionName="SetExitKey"/>
+    <functioncall functionName="SetTargetFPS"/>
+    <functioncall functionName="SetWindowIcon"/>
+    <functioncall functionName="WINDOW_RESIZED"/>
+    <functioncall functionName="addListener"/>
+    <functioncall functionName="deinit"/>
+    <functioncall functionName="emscripten_set_main_loop_arg"/>
+    <functioncall functionName="end"/>
+    <functioncall functionName="ensureList"/>
+    <functioncall functionName="false"/>
+    <functioncall functionName="find"/>
+    <functioncall functionName="forward_list"/>
+    <functioncall functionName="function"/>
+    <functioncall functionName="init"/>
+    <functioncall functionName="notify"/>
+    <functioncall functionName="push_front"/>
+    <functioncall functionName="render"/>
+    <functioncall functionName="setupAppEvents"/>
+    <functioncall functionName="setupRaylib"/>
+    <functioncall functionName="try_emplace"/>
+    <functioncall functionName="unordered_map"/>
+    <functioncall functionName="updateApp"/>
+    <functioncall functionName="updateFullscreenState"/>
+  </FileInfo>
+  <FileInfo check="Class">
+<class name="App" file="src/App/App.h" configuration="EMSCRIPTEN;NOGUI" line="11" col="1" hash="8668025072433921358"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl file="include/EventDispatcher.h" functionName="addListener" lineNumber="26" column="21"/>
+    <functiondecl file="include/EventDispatcher.h" functionName="notify" lineNumber="46" column="21"/>
+    <functiondecl file="include/EventDispatcher.h" functionName="reset" lineNumber="57" column="21"/>
+    <functiondecl file="include/EventDispatcher.h" functionName="ensureList" lineNumber="64" column="21"/>
+    <functiondecl file="src/App/App.cpp" functionName="setupRaylib" lineNumber="15" column="6"/>
+    <functiondecl file="src/App/App.cpp" functionName="init" lineNumber="46" column="11"/>
+    <functiondecl file="src/App/App.cpp" functionName="updateFullscreenState" lineNumber="55" column="6"/>
+    <functiondecl file="src/App/App.cpp" functionName="updateApp" lineNumber="79" column="6"/>
+    <functiondecl file="src/App/App.cpp" functionName="run" lineNumber="101" column="11"/>
+    <functiondecl file="src/App/App.cpp" functionName="render" lineNumber="123" column="11"/>
+    <functiondecl file="src/App/App.cpp" functionName="deinit" lineNumber="133" column="11"/>
+    <functiondecl file="src/App/App.cpp" functionName="setupAppEvents" lineNumber="141" column="11"/>
+    <functioncall functionName="BG"/>
+    <functioncall functionName="BeginDrawing"/>
+    <functioncall functionName="ClearBackground"/>
+    <functioncall functionName="CloseWindow"/>
+    <functioncall functionName="DrawFPS"/>
+    <functioncall functionName="EXIT_KEY"/>
+    <functioncall functionName="EndDrawing"/>
+    <functioncall functionName="EventId"/>
+    <functioncall functionName="FPS_TARGET"/>
+    <functioncall functionName="GetFrameTime"/>
+    <functioncall functionName="GetMousePosition"/>
+    <functioncall functionName="GetScreenHeight"/>
+    <functioncall functionName="GetScreenWidth"/>
+    <functioncall functionName="IsMouseButtonDown"/>
+    <functioncall functionName="MOUSE_LEFT_BUTTON"/>
+    <functioncall functionName="SetExitKey"/>
+    <functioncall functionName="SetTargetFPS"/>
+    <functioncall functionName="WINDOW_RESIZED"/>
+    <functioncall functionName="addListener"/>
+    <functioncall functionName="deinit"/>
+    <functioncall functionName="emscripten_set_main_loop_arg"/>
+    <functioncall functionName="end"/>
+    <functioncall functionName="ensureList"/>
+    <functioncall functionName="false"/>
+    <functioncall functionName="find"/>
+    <functioncall functionName="forward_list"/>
+    <functioncall functionName="function"/>
+    <functioncall functionName="init"/>
+    <functioncall functionName="notify"/>
+    <functioncall functionName="push_front"/>
+    <functioncall functionName="render"/>
+    <functioncall functionName="setupAppEvents"/>
+    <functioncall functionName="setupRaylib"/>
+    <functioncall functionName="try_emplace"/>
+    <functioncall functionName="unordered_map"/>
+    <functioncall functionName="updateApp"/>
+    <functioncall functionName="updateFullscreenState"/>
+  </FileInfo>
+  <FileInfo check="Class">
+<class name="App" file="src/App/App.h" configuration="NOGUI" line="11" col="1" hash="8616519317137534186"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl file="include/EventDispatcher.h" functionName="addListener" lineNumber="26" column="21"/>
+    <functiondecl file="include/EventDispatcher.h" functionName="notify" lineNumber="46" column="21"/>
+    <functiondecl file="include/EventDispatcher.h" functionName="reset" lineNumber="57" column="21"/>
+    <functiondecl file="include/EventDispatcher.h" functionName="ensureList" lineNumber="64" column="21"/>
+    <functiondecl file="src/App/App.cpp" functionName="setupRaylib" lineNumber="15" column="6"/>
+    <functiondecl file="src/App/App.cpp" functionName="init" lineNumber="46" column="11"/>
+    <functiondecl file="src/App/App.cpp" functionName="updateFullscreenState" lineNumber="55" column="6"/>
+    <functiondecl file="src/App/App.cpp" functionName="updateApp" lineNumber="79" column="6"/>
+    <functiondecl file="src/App/App.cpp" functionName="run" lineNumber="101" column="11"/>
+    <functiondecl file="src/App/App.cpp" functionName="render" lineNumber="123" column="11"/>
+    <functiondecl file="src/App/App.cpp" functionName="deinit" lineNumber="133" column="11"/>
+    <functiondecl file="src/App/App.cpp" functionName="setupAppEvents" lineNumber="141" column="11"/>
+    <functioncall functionName="BG"/>
+    <functioncall functionName="BeginDrawing"/>
+    <functioncall functionName="ClearBackground"/>
+    <functioncall functionName="CloseWindow"/>
+    <functioncall functionName="DrawFPS"/>
+    <functioncall functionName="EXIT_KEY"/>
+    <functioncall functionName="EndDrawing"/>
+    <functioncall functionName="EventId"/>
+    <functioncall functionName="FPS_TARGET"/>
+    <functioncall functionName="GetFrameTime"/>
+    <functioncall functionName="GetMousePosition"/>
+    <functioncall functionName="GetScreenHeight"/>
+    <functioncall functionName="GetScreenWidth"/>
+    <functioncall functionName="IsKeyDown"/>
+    <functioncall functionName="IsMouseButtonDown"/>
+    <functioncall functionName="MOUSE_LEFT_BUTTON"/>
+    <functioncall functionName="SetExitKey"/>
+    <functioncall functionName="SetTargetFPS"/>
+    <functioncall functionName="WINDOW_RESIZED"/>
+    <functioncall functionName="addListener"/>
+    <functioncall functionName="deinit"/>
+    <functioncall functionName="end"/>
+    <functioncall functionName="ensureList"/>
+    <functioncall functionName="false"/>
+    <functioncall functionName="find"/>
+    <functioncall functionName="forward_list"/>
+    <functioncall functionName="function"/>
+    <functioncall functionName="init"/>
+    <functioncall functionName="notify"/>
+    <functioncall functionName="push_front"/>
+    <functioncall functionName="render"/>
+    <functioncall functionName="setupAppEvents"/>
+    <functioncall functionName="setupRaylib"/>
+    <functioncall functionName="try_emplace"/>
+    <functioncall functionName="unordered_map"/>
+    <functioncall functionName="updateApp"/>
+    <functioncall functionName="updateFullscreenState"/>
+  </FileInfo>
+</analyzerinfo>

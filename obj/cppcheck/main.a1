@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="14569453934268324706">
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl file="src/main.cpp" functionName="main" lineNumber="5" column="5"/>
+    <functioncall functionName="deinit"/>
+    <functioncall functionName="init"/>
+    <functioncall functionName="run"/>
+  </FileInfo>
+</analyzerinfo>

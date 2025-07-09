@@ -1,0 +1,12 @@
+addListener call:[ensureList,notify,push_front] noreturn:[notify]
+notify call:[listener,void] noreturn:[listener]
+reset call:[void]
+ensureList call:[end,find,try_emplace,void] noreturn:[try_emplace]
+setupRaylib call:[SetExitKey,SetTargetFPS] noreturn:[SetExitKey]
+init call:[init,setupAppEvents,setupRaylib] noreturn:[init]
+updateFullscreenState
+updateApp call:[GetFrameTime,GetMousePosition,GetScreenHeight,GetScreenWidth,IsMouseButtonDown,render,updateFullscreenState] noreturn:[GetMousePosition,render]
+run call:[IsKeyDown,updateApp] noreturn:[updateApp]
+render call:[BeginDrawing,ClearBackground,DrawFPS,EndDrawing] noreturn:[EndDrawing]
+deinit call:[CloseWindow,deinit] noreturn:[CloseWindow]
+setupAppEvents call:[addListener,init] noreturn:[addListener,init]

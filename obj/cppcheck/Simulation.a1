@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<analyzerinfo hash="7669522851063893904">
+        <error id="functionStatic" severity="performance" msg="Technically the member function &apos;Simulation::init&apos; can be static (but you may consider moving to unnamed namespace)." verbose="The member function &apos;Simulation::init&apos; can be made a static function. Making a function static can bring a performance benefit since no &apos;this&apos; instance is passed to the function. This change should not cause compiler errors but it does not necessarily make sense conceptually. Think about your design and the task of the function first - is it a function that must not access members of class instances? And maybe it is more appropriate to move this function to an unnamed namespace." cwe="398" inconclusive="true" file0="src/App/Simulation/Simulation.cpp">
+            <location file="src/App/Simulation/Simulation.cpp" line="3" column="18"/>
+            <location file="src/App/Simulation/Simulation.h" line="7" column="10"/>
+            <symbol>Simulation::init</symbol>
+        </error>
+        <error id="functionStatic" severity="performance" msg="Technically the member function &apos;Simulation::update&apos; can be static (but you may consider moving to unnamed namespace)." verbose="The member function &apos;Simulation::update&apos; can be made a static function. Making a function static can bring a performance benefit since no &apos;this&apos; instance is passed to the function. This change should not cause compiler errors but it does not necessarily make sense conceptually. Think about your design and the task of the function first - is it a function that must not access members of class instances? And maybe it is more appropriate to move this function to an unnamed namespace." cwe="398" inconclusive="true" file0="src/App/Simulation/Simulation.cpp">
+            <location file="src/App/Simulation/Simulation.cpp" line="5" column="18"/>
+            <location file="src/App/Simulation/Simulation.h" line="8" column="10"/>
+            <symbol>Simulation::update</symbol>
+        </error>
+        <error id="functionStatic" severity="performance" msg="Technically the member function &apos;Simulation::deinit&apos; can be static (but you may consider moving to unnamed namespace)." verbose="The member function &apos;Simulation::deinit&apos; can be made a static function. Making a function static can bring a performance benefit since no &apos;this&apos; instance is passed to the function. This change should not cause compiler errors but it does not necessarily make sense conceptually. Think about your design and the task of the function first - is it a function that must not access members of class instances? And maybe it is more appropriate to move this function to an unnamed namespace." cwe="398" inconclusive="true" file0="src/App/Simulation/Simulation.cpp">
+            <location file="src/App/Simulation/Simulation.cpp" line="7" column="18"/>
+            <location file="src/App/Simulation/Simulation.h" line="9" column="10"/>
+            <symbol>Simulation::deinit</symbol>
+        </error>
+  <FileInfo check="Class">
+<class name="Simulation" file="src/App/Simulation/Simulation.h" configuration="" line="4" col="1" hash="9213590260930505226"/>
+  </FileInfo>
+  <FileInfo check="CheckUnusedFunctions">
+    <functiondecl file="src/App/Simulation/Simulation.cpp" functionName="init" lineNumber="3" column="18"/>
+    <functiondecl file="src/App/Simulation/Simulation.cpp" functionName="update" lineNumber="5" column="18"/>
+    <functiondecl file="src/App/Simulation/Simulation.cpp" functionName="deinit" lineNumber="7" column="18"/>
+  </FileInfo>
+</analyzerinfo>
